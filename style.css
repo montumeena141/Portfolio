@@ -161,7 +161,7 @@ body{
     font-size: 19px;
     background-color: transparent; /* Initial background */
     overflow: hidden; /* Hide overflow for pseudo-element */
-    z-index: 1; /* Ensure text is above the pseudo-element */
+    /* z-index: 1; */
     transition: color 0.3s ease; /* Smooth text color transition *//
 }
 /* ---resume hover */
