@@ -1,237 +1,1522 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montu Meena</title>
-    <link rel="icon" type="image" href="img/PHOTO_1-removebg-preview.png">
+
+    <meta name="description"
+        content="Montu Meena - MCA Student, Frontend Developer and Web Developer Portfolio">
+
+    <meta name="author" content="Montu Meena">
+
+    <title>Montu Meena | Developer Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=database"/>
 </head>
+
 <body>
-    <div class="mainNavbar">
-        <!-- ...existing code... -->
-        <button class="nav-toggle" aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
-        </button>
-<!-- ...existing code... -->
-        <div class="firstNav">
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- ================= LOADER ================= -->
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">&lt;MM/&gt;</div>
+            <div class="loader-line"></div>
+            <p>Loading portfolio...</p>
+        </div>
+    </div>
+
+
+    <!-- ================= CURSOR GLOW ================= -->
+
+    <div class="cursor-glow"></div>
+
+
+    <!-- ================= SCROLL PROGRESS ================= -->
+
+    <div class="scroll-progress"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo" aria-label="Montu Meena — home">
+                <span>&lt;</span>MM<span>/&gt;</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#experience" class="nav-link">
+                    Experience
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button id="themeToggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <a
+                    href="assets/resume.pdf"
+                    class="resume-small"
+                    target="_blank"
+                >
+                    Resume
+                </a>
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Open menu"
+                    aria-controls="mobileMenu"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <main id="main-content">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-background">
+                <div class="grid-background"></div>
+                <div class="gradient-orb orb-one"></div>
+                <div class="gradient-orb orb-two"></div>
+            </div>
+
+
+            <div class="hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Available for opportunities
+                    </div>
+
+
+                    <p class="hero-small">
+                        HELLO, I'M
+                    </p>
+
+
+                    <h1>
+                        Montu
+                        <span>Meena</span>
+                    </h1>
+
+
+                    <h2>
+                        I'm a
+                        <span id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I build modern, responsive and user-focused web
+                        applications with clean code, creative interfaces
+                        and practical functionality.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Connect
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/montumeena141"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/montu-meena-60a55b248/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/iammontu141"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://wa.me/918003412262"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+
+                <div class="hero-visual reveal">
+
+                    <div class="code-window">
+
+                        <div class="window-top">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p>developer.js</p>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="code-purple">const</span>
+                                developer =
+                                <span class="code-yellow">{</span>
+                            </p>
+
+                            <p class="indent">
+                                name:
+                                <span class="code-green">
+                                    "Montu Meena"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                role:
+                                <span class="code-green">
+                                    "Web Developer"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                education:
+                                <span class="code-green">
+                                    "MCA"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                experience:
+                                <span class="code-green">
+                                    "6 Months"
+                                </span>,
+                            </p>
+
+                            <p class="indent">
+                                passion:
+                                <span class="code-green">
+                                    "Building"
+                                </span>
+                            </p>
+
+                            <p>
+                                <span class="code-yellow">}</span>;
+                            <span class="code-purple">export</span>
+                            <span class="code-yellow">default</span>
+                            developer;
+                        </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-one">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Clean Code</span>
+                    </div>
+
+
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Web Apps</span>
+                    </div>
+
+
+                    <div class="hero-circle">
+                        <div class="circle-inner">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#about" class="scroll-down">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section about-section">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <div>
+                        <p class="section-label">
+                            GET TO KNOW ME
+                        </p>
+
+                        <h2>
+                            About <span>Me</span>
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+
+                        <div class="image-frame">
+
+                            <div class="image-decoration"></div>
+
+                            <img
+                                src="assets/profile.png"
+                                alt="Montu Meena"
+                            >
+
+                        </div>
+
+                        <div class="experience-badge">
+
+                            <strong>6+</strong>
+
+                            <span>
+                                Months<br>
+                                Internship
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <p class="about-intro">
+
+                            I'm Montu Meena, a developer who enjoys turning
+                            ideas into practical and visually appealing
+                            digital experiences.
+
+                        </p>
+
+
+                        <p>
+
+                            I completed my Bachelor of Computer Applications
+                            from Parul University and have completed a
+                            <strong>6-month internship at Acciojob Private
+                            Limited</strong>, where I worked on strengthening
+                            my development skills and building practical
+                            projects.
+
+                        </p>
+
+
+                        <p>
+
+                            Currently, I am pursuing my
+                            <strong>Master of Computer Applications (MCA)</strong>
+                            from <strong>ITM SLS Baroda University</strong>, while
+                            continuing to improve my development and
+                            problem-solving skills.
+
+                        </p>
+
+
+                        <div class="about-stats">
+
+                            <div class="stat">
+
+                                <strong>6+</strong>
+
+                                <span>
+                                    Months Internship
+                                </span>
+
+                            </div>
+
+
+                            <div class="stat">
+
+                                <strong>MCA</strong>
+
+                                <span>
+                                    Currently Pursuing
+                                </span>
+
+                            </div>
+
+
+                            <div class="stat">
+
+                                <strong>10+</strong>
+
+                                <span>
+                                    Technologies
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="assets/resume.pdf"
+                            target="_blank"
+                            class="text-link"
+                        >
+                            View Resume
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section id="experience" class="section experience-section">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            MY JOURNEY
+                        </p>
+
+                        <h2>
+                            Experience & <span>Education</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- EXPERIENCE -->
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            6 MONTHS
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <div class="timeline-card-top">
+
+                                <div>
+
+                                    <span class="timeline-type">
+                                        INTERNSHIP
+                                    </span>
+
+                                    <h3>
+                                        Acciojob Private Limited
+                                    </h3>
+
+                                </div>
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                            </div>
+
+
+                            <p>
+
+                                Completed a 6-month internship focused on
+                                improving practical software development
+                                knowledge, problem-solving and building
+                                real-world development skills.
+
+                            </p>
+
+
+                            <div class="timeline-tags">
+
+                                <span>Web Development</span>
+                                <span>Programming</span>
+                                <span>Projects</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MCA -->
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            03 AUG 2026
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <div class="timeline-card-top">
+
+                                <div>
+
+                                    <span class="timeline-type">
+                                        EDUCATION
+                                    </span>
+
+                                    <h3>
+                                        Master of Computer Applications
+                                    </h3>
+
+                                </div>
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                            </div>
+
+
+                            <p>
+
+                                Currently pursuing MCA to deepen my knowledge
+                                in computer applications, software development,
+                                programming and advanced technology.
+
+                            </p>
+
+
+                            <div class="timeline-tags">
+
+                                <span>MCA</span>
+                                <span>Computer Applications</span>
+                                <span>2026 — Present</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BCA -->
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            2022 — 2025
+                        </div>
+
+                        <div class="timeline-card">
+
+                            <div class="timeline-card-top">
+
+                                <div>
+
+                                    <span class="timeline-type">
+                                        EDUCATION
+                                    </span>
+
+                                    <h3>
+                                        Bachelor of Computer Applications
+                                    </h3>
+
+                                    <p class="timeline-company">
+                                        Parul University
+                                    </p>
+
+                                </div>
+
+                                <i class="fa-solid fa-university"></i>
+
+                            </div>
+
+
+                            <p>
+
+                                Completed BCA with a strong foundation in
+                                programming, web development, data structures,
+                                databases and software development.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section skills-section">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            WHAT I WORK WITH
+                        </p>
+
+                        <h2>
+                            Technical <span>Skills</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skills-left reveal">
+
+                        <p class="skills-description">
+
+                            Technologies and tools I have worked with while
+                            learning, building projects and gaining practical
+                            development experience.
+
+                        </p>
+
+
+                        <div class="skill-bars">
+
+
+                            <div class="skill-item">
+
+                                <div class="skill-info">
+
+                                    <span>HTML</span>
+                                    <span>90%</span>
+
+                                </div>
+
+                                <div class="skill-bar">
+                                    <span style="width:90%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-item">
+
+                                <div class="skill-info">
+
+                                    <span>CSS</span>
+                                    <span>85%</span>
+
+                                </div>
+
+                                <div class="skill-bar">
+                                    <span style="width:85%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-item">
+
+                                <div class="skill-info">
+
+                                    <span>JavaScript</span>
+                                    <span>80%</span>
+
+                                </div>
+
+                                <div class="skill-bar">
+                                    <span style="width:80%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-item">
+
+                                <div class="skill-info">
+
+                                    <span>Java</span>
+                                    <span>75%</span>
+
+                                </div>
+
+                                <div class="skill-bar">
+                                    <span style="width:75%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-item">
+
+                                <div class="skill-info">
+
+                                    <span>React</span>
+                                    <span>70%</span>
+
+                                </div>
+
+                                <div class="skill-bar">
+                                    <span style="width:70%"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="skills-right reveal">
+
+                        <div class="technology-grid">
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-react"></i>
+                                <span>React</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-java"></i>
+                                <span>Java</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+
+
+                            <div class="technology">
+                                <i class="fa-solid fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="section projects-section">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            SELECTED WORK
+                        </p>
+
+                        <h2>
+                            Featured <span>Projects</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-filters reveal">
+
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="frontend"
+                        aria-pressed="false"
+                    >
+                        Frontend
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="javascript"
+                        aria-pressed="false"
+                    >
+                        JavaScript
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="react"
+                        aria-pressed="false"
+                    >
+                        React
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 1 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="frontend"
+                    >
+
+                        <div class="project-image project-one">
+
+                            <div class="project-browser">
+
+                                <div class="browser-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="fake-store">
+
+                                    <div class="fake-header">
+                                        FASHION
+                                    </div>
+
+                                    <div class="fake-content">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                01
+                            </div>
+
+                            <h3>
+                                E-Commerce Website
+                            </h3>
+
+                            <p>
+
+                                A modern shopping website built from a
+                                Figma-inspired design with responsive UI
+                                and clean frontend implementation.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://codev-ecommcer-degin.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 2 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="javascript"
+                    >
+
+                        <div class="project-image project-two">
+
+                            <div class="youtube-ui">
+
+                                <div class="yt-top">
+                                    <span>▶</span>
+                                    YouTube
+                                </div>
+
+                                <div class="yt-video"></div>
+
+                                <div class="yt-lines">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                02
+                            </div>
+
+                            <h3>
+                                YouTube Clone
+                            </h3>
+
+                            <p>
+
+                                A frontend YouTube-inspired interface focused
+                                on creating a familiar video browsing
+                                experience.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <span class="project-link project-link--muted" aria-label="Project demo coming soon">
+                                Demo coming soon
+                                <i class="fa-solid fa-clock"></i>
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 3 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="javascript"
+                    >
+
+                        <div class="project-image project-three">
+
+                            <div class="sheet-ui">
+
+                                <div class="sheet-toolbar"></div>
+
+                                <div class="sheet-grid">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                03
+                            </div>
+
+                            <h3>
+                                Google Sheet Clone
+                            </h3>
+
+                            <p>
+
+                                A spreadsheet-inspired web application
+                                focused on interactive UI and JavaScript
+                                functionality.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://googlesheetytech.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 4 -->
+
+                    <article
+                        class="project-card reveal"
+                        data-category="react"
+                    >
+
+                        <div class="project-image project-four">
+
+                            <div class="blinkit-ui">
+
+                                <div class="blinkit-top">
+                                    Blink<span>it</span>
+                                </div>
+
+                                <div class="blinkit-products">
+
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-number">
+                                04
+                            </div>
+
+                            <h3>
+                                Blinkit Clone
+                            </h3>
+
+                            <p>
+
+                                A grocery delivery inspired frontend project
+                                focused on reusable components and responsive
+                                interface design.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://blinket.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="contact-background"></div>
+
+            <div class="section-container">
+
+                <div class="contact-wrapper reveal">
+
+
+                    <div class="contact-heading">
+
+                        <span class="section-number">
+                            05
+                        </span>
+
+                        <p class="section-label">
+                            HAVE A PROJECT IN MIND?
+                        </p>
+
+                        <h2>
+                            Let's build something
+                            <span>great together.</span>
+                        </h2>
+
+                        <p>
+
+                            Whether you're looking to hire, collaborate
+                            or simply connect, feel free to reach out.
+
+                        </p>
+
+
+                        <div class="contact-details">
+
+                            <a href="mailto:montumeena141@gmail.com">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <span>
+                                    montumeena141@gmail.com
+                                </span>
+
+                            </a>
+
+
+                            <a href="tel:+918003412262">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <span>
+                                    +91 80034 12262
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT FORM -->
+
+                    <form
+                        id="contactForm"
+                        class="contact-form"
+                        action="https://formsubmit.co/montumeena141@gmail.com"
+                        method="POST"
+                    >
+
+                        <input type="hidden" name="_subject" value="New portfolio contact message">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary submit-button"
+                        >
+
+                            <span class="submit-button-text">Send Message</span>
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+
+                        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                &lt;MM/&gt;
+            </div>
+
+
+            <p>
+                Designed & built by
+                <strong>Montu Meena</strong>
+            </p>
+
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/montumeena141"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/montu-meena-60a55b248/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/918003412262"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Montu Meena. All rights reserved.
+            </p>
+
             <a href="#home">
-            <i class="fa-solid fa-user-tie" style="color: #ffffff; font-size:25px;"></i></a>
-        </div>
-        <div>
-            <nav class="secondNav">
-             <a href="#about">About</a>
-             <a href="#skill">skill</a>
-             <a href="#project">project</a>
-             <a href="#contact">contact</a>
-            </nav> 
-         </div>
-         <div class="thirdNav">
-            <a href="https://github.com/montumeena141" target="_blank" ><i class="fa-brands fa-github" style="color: #fcfcfc;" title="Githhub"></i></a>
-
-            <a href="https://www.linkedin.com/in/montu-meena-60a55b248/" target="_blank" >
-            <i class="fa-brands fa-linkedin" style="color: #ffffff;" title="linkedin"></i></a>
-
-            <a href="https://www.instagram.com/iammontu141?igsh=aDV1cDMzN2trZGph" target="_blank" >
-            <i class="fa-brands fa-instagram fa-spin-pulse" style="color: #d4d4d4;" title="Instagram"></i></a>
-
-            <a href="https://wa.me/+918003412262" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp" style="color: #e4e4e4;" title="Whatsapp"></i>
-          </a>
-         </div>
-    </div>
-    
-
-    <div id="home" class="intro">
-        <div class="introtext">
-            <p>hi there, i'm</p>
-            <h1>Montu Meena</h1>
-            <p>
-                Driven by innovation, I build dynamic and user-centric web solutions that merge functionality with seamless design.
-            </p>
-            <a class="resume" href="UPResume.pdf" target="_blank">Resume</a>
-            
-        </div>
-        <div class="introphoto">
-           <img src="	https://williamssam.netlify.app/assets/coding-ground.png" alt="">
+                Back to top
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
 
         </div>
-    </div>
 
-
-    <div id="about" class="about">
-        <div class="photo">
-            <img src="img/PHOTO_1-removebg-preview.png" alt="">
-        </div>
-        <div class="photoside">
-            <h1>About me</h1>
-            <p>
-                I'm a final-year BCA student from Parul University, specialized in Blockchain (Web 3.0), and currently focusing on Frontend Development. I’m learning and building web applications to kickstart my career through AccioJob. With a strong foundation in HTML, CSS, JavaScript, and React, I’m eager to create intuitive and impactful user experiences.
-                <span class="spacer"></span>
-
-            Beyond coding, I enjoy exploring new technologies and refining my problem-solving skills. My goal is to contribute to innovative projects that push the boundaries of web development.
-
-                Let me know if you want any further refinements! 🚀
-                <span class="spacer"></span>
-            </p>
-        </div>
-    </div>
-
-
-    <div id="skill" class="skills">
-        <h1>My Skills</h1>
-        <p>Technologies I Work With</p>
-        <div class="icon-grid">
-            <i class="fa-brands fa-html5" style="color: #dc571e;"></i>
-            <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i>
-            <i class="fa-brands fa-js" style="color: #fee906;"></i>
-            <i class="fa-brands fa-react" style="color: #0ac2ff;"></i>
-            <i class="fa-brands fa-bootstrap" style="color: #400f57;"></i>
-            <i class="fa-brands fa-java" style="color: #fed258;"></i>
-            <!-- <i class="fa-brands fa-php" style="color: #000475;"></i> -->
-            <i class="fa-brands fa-github" style="color: #fffafa;"></i>
-            <i class="fa-brands fa-git-alt" style="color: #f58300;"></i>
-            <!-- <i class="fa-brands fa-android" style="color: #039e00;"></i> -->
-            <i class="fa-brands fa-node" style="color: #52ff86;"></i>
-            <i><img src="MongoDB (1).png" alt="" style="width: 80%; height:30%;"></i>
-        </div>
-    </div>
-
-    
-
-    <div id="project" class="projects">
-        <h1> My Projects</h1>
-        <p>Some Things I Built</p>
-        <p>Check out my latest work
-           
-            I've had the opportunity to work on a diverse range of projects, ranging from basic websites to more advanced web applications. Below are some of my favorite projects that highlight my skills and experience
-        </p>
-
-        <div class="buttons">
-            <button type="button">Major Projects</button>
-            <button type="button">Minor Projects</button>
-        </div>
-
-        
-        <!-- HTML Structure -->
-        <div class="projects-container">
-            <!-- <div class="major"> -->
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="img/Poster.png" alt="E-Commerce">
-                <p class="project-title">E-Commerce</p>
-                <p class="project-description">
-                    A minimalist HTML & CSS implementation of a Figma-designed shopping site. Clean UI with a modern layout.
-                </p>
-                <div class="lang">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
-                <a href="https://codev-ecommcer-degin.netlify.app/"   target="_blank" class="visit-btn">
-                    <i class="fa-solid fa-globe"></i> Visit Website
-                </a>
-            </div>
-    
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="img/image.png" alt="Project 2">
-                <p class="project-title">YouTube Clone</p>
-                <p class="project-description">
-                    A simple yet functional to-do list app that allows users to add, edit, and delete tasks with a smooth UI.
-                </p>
-                <div class="lang">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                </div>
-                <a href="#" target="_blank" class="visit-btn">
-                    <i class="fa-solid fa-globe"></i> Visit Website
-                </a>
-            </div>
-    
-
-             <!-- Project 3 -->
-             <div class="project-card">
-                <img src="img/image copy.png" alt="Project 2">
-                <p class="project-title">Google Sheet Clone</p>
-                <p class="project-description">
-                    A simple yet functional to-do list app that allows users to add, edit, and delete tasks with a smooth UI.
-                </p>
-                <div class="lang">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                </div>
-                <a href="https://googlesheetytech.netlify.app/" class="visit-btn" target="_blank">
-                    <i class="fa-solid fa-globe"></i> Visit Website
-                </a>
-            </div>
-            <!-- Add More Projects Here -->
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="img/image copy 2.png" alt="Project 2">
-                <p class="project-title">Blinkit Clone</p>
-                <p class="project-description">
-                    A simple yet functional to-do list app that allows users to add, edit, and delete tasks with a smooth UI.
-                </p>
-                <div class="lang">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                </div>
-                <a href="https://blinket.vercel.app/" target="_blank" class="visit-btn">
-                    <i class="fa-solid fa-globe"></i> Visit Website
-                </a>
-            </div>
-            
-        </div>
-
-        <div class="minor">
-            <div class="projects-container">
-                <!-- Project 3 -->
-             <div class="project-card">
-                <img src="img/image copy.png" alt="Project 2">
-                <p class="project-title">Google Sheet Clone</p>
-                <p class="project-description">
-                    A simple yet functional to-do list app that allows users to add, edit, and delete tasks with a smooth UI.
-                </p>
-                <div class="lang">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                </div>
-                <a href="#" target="_blank" class="visit-btn">
-                    <i class="fa-solid fa-globe"></i> Visit Website
-                </a>
-            </div>
-        </div>
-        </div>
-    <!-- </div> -->
-    </div>
+    </footer>
 
 
 
-    <div id="contact" class="contact">
-        <p>Have a project? or just looking to hire?</p>
-        <h1>Let's Work Together</h1>
-        <p>Feel free to reach out if you're looking to hire, just want to connect or see if we can build something amazing together.</p>
+    <!-- JavaScript -->
 
-
-        <a class="he" href="mailto:montumeena141@gmail.com">GET IN TOUCH<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
-
-        <div class="footer">
-            <i class="fa-solid fa-copyright" style="color: #fcfcfc;"></i>
-            Made by Montu Meena
-            
-            <a href="#home"><i class="fa-solid fa-up-long" style="color: #f0f0f0;"></i></a>
-        </div>
-        <script src="script.js"></script>
-        
-    </div>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
